@@ -1,0 +1,87 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zurlii Home",
+        "description": "Premium glassmorphism dashboard. The bundled background renders are used by default; you can switch to your own images later.",
+        "data": {
+          "title": "House title",
+          "subtitle": "Subtitle",
+          "sidebar_title": "Sidebar title",
+          "language": "Language",
+          "use_bundled_backgrounds": "Use bundled backgrounds",
+          "local_background_base": "Custom background base URL",
+          "show_panel": "Create sidebar panel",
+          "register_card": "Register Lovelace card automatically"
+        },
+        "data_description": {
+          "title": "Shown in the top-left brand, for example “Zurli Family”.",
+          "subtitle": "Small line below the brand, for example “AdiHouse · Smart Home”.",
+          "sidebar_title": "Label of the sidebar entry.",
+          "use_bundled_backgrounds": "Serve the included room renders from the integration.",
+          "local_background_base": "Used only when bundled backgrounds are disabled. Example: /local/backgrounds",
+          "show_panel": "Adds the full-screen Zurlii Home entry to the sidebar.",
+          "register_card": "Makes type: custom:zurlii-home available on every dashboard."
+        }
+      }
+    },
+    "error": {
+      "invalid_title": "The house title cannot be empty.",
+      "invalid_background_base": "The background base must start with /, http:// or https://."
+    },
+    "abort": {
+      "already_configured": "Zurlii Home is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Zurlii Home options",
+        "description": "Change branding, panel behavior, per-room background files and advanced entity mappings. Saving reloads the panel automatically.",
+        "data": {
+          "title": "House title",
+          "subtitle": "Subtitle",
+          "sidebar_title": "Sidebar title",
+          "language": "Language",
+          "use_bundled_backgrounds": "Use bundled backgrounds",
+          "local_background_base": "Custom background base URL",
+          "show_panel": "Create sidebar panel",
+          "register_card": "Register Lovelace card automatically",
+          "bg_home": "Home background file",
+          "bg_garaj": "Garaj background file",
+          "bg_curte": "Curte background file",
+          "bg_hol_mare": "Hol mare background file",
+          "bg_hol_mic": "Hol mic background file",
+          "bg_bucatarie": "Bucătărie background file",
+          "bg_dormitor_adi": "Dormitor Adi background file",
+          "bg_dormitor_adina": "Dormitor Adina background file",
+          "bg_dormitor_alexandra": "Dormitor Alexandra background file",
+          "room_overrides_json": "Advanced entity mapping (JSON)",
+          "doorbell_event": "Doorbell event entity",
+          "doorbell_notify": "Doorbell notify target"
+        },
+        "data_description": {
+          "local_background_base": "Used only when bundled backgrounds are disabled. Example: /local/backgrounds",
+          "bg_home": "Filename relative to the background base, or a full /local path. Example: casa.jpg",
+          "bg_garaj": "Filename relative to the background base. Example: garaj.jpg",
+          "bg_curte": "Filename relative to the background base. Example: curte.jpg",
+          "bg_hol_mare": "Filename relative to the background base. Example: hol_mare.jpg",
+          "bg_hol_mic": "Filename relative to the background base. Example: hol_mic.jpg",
+          "bg_bucatarie": "Filename relative to the background base. Example: bucatarie.jpg",
+          "bg_dormitor_adi": "Filename relative to the background base. Example: dormitor_adi.jpg",
+          "bg_dormitor_adina": "Filename relative to the background base. Example: dormitor_adina.jpg",
+          "bg_dormitor_alexandra": "Filename relative to the background base. Example: dormitor_alexandra.jpg",
+          "room_overrides_json": "Allowed keys: rooms, global, labels, remote_commands, features, clock, greeting_name. Room entries are merged by id, so you only send what changes.",
+          "doorbell_event": "Event entity fired by the physical doorbell. Default: event.soneria_inteligenta_doorbell_picture.",
+          "doorbell_notify": "Notify entity/service that should ring on a doorbell press. Default: notify.tvb."
+        }
+      }
+    },
+    "error": {
+      "invalid_title": "The house title cannot be empty.",
+      "invalid_background_base": "The background base must start with /, http:// or https://.",
+      "invalid_json": "The advanced mapping is not valid JSON.",
+      "invalid_overrides": "The advanced mapping contains unsupported keys or types."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "domain": "zurlii_home",
+  "name": "Zurlii Home",
+  "codeowners": ["@AdiBUBBLE"],
+  "config_flow": true,
+  "dependencies": ["frontend", "http", "panel_custom"],
+  "documentation": "https://github.com/AdiBUBBLE/zurlii-home",
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/AdiBUBBLE/zurlii-home/issues",
+  "loggers": ["custom_components.zurlii_home"],
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "2.1.0"
+}

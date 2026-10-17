@@ -1,0 +1,87 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Zurlii Home",
+        "description": "Dashboard premium cu efect de sticlă. Imaginile incluse sunt folosite implicit; le poți înlocui cu randările tale ulterior.",
+        "data": {
+          "title": "Titlul casei",
+          "subtitle": "Subtitlu",
+          "sidebar_title": "Titlu în bara laterală",
+          "language": "Limbă",
+          "use_bundled_backgrounds": "Folosește fundalurile incluse",
+          "local_background_base": "URL de bază pentru fundaluri personalizate",
+          "show_panel": "Creează panoul în bara laterală",
+          "register_card": "Înregistrează automat cardul Lovelace"
+        },
+        "data_description": {
+          "title": "Apare în brandul din stânga sus, de exemplu „Zurli Family”.",
+          "subtitle": "Linia mică de sub brand, de exemplu „AdiHouse · Smart Home”.",
+          "sidebar_title": "Eticheta intrării din bara laterală.",
+          "use_bundled_backgrounds": "Servește randările camerelor incluse în integrare.",
+          "local_background_base": "Folosit doar când fundalurile incluse sunt dezactivate. Exemplu: /local/backgrounds",
+          "show_panel": "Adaugă intrarea full-screen Zurlii Home în bara laterală.",
+          "register_card": "Face tipul custom:zurlii-home disponibil pe orice dashboard."
+        }
+      }
+    },
+    "error": {
+      "invalid_title": "Titlul casei nu poate fi gol.",
+      "invalid_background_base": "Baza fundalurilor trebuie să înceapă cu /, http:// sau https://."
+    },
+    "abort": {
+      "already_configured": "Zurlii Home este deja configurat."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opțiuni Zurlii Home",
+        "description": "Schimbă brandingul, comportamentul panoului, fișierele de fundal și maparea avansată a entităților. Salvarea reîncarcă panoul automat.",
+        "data": {
+          "title": "Titlul casei",
+          "subtitle": "Subtitlu",
+          "sidebar_title": "Titlu în bara laterală",
+          "language": "Limbă",
+          "use_bundled_backgrounds": "Folosește fundalurile incluse",
+          "local_background_base": "URL de bază pentru fundaluri personalizate",
+          "show_panel": "Creează panoul în bara laterală",
+          "register_card": "Înregistrează automat cardul Lovelace",
+          "bg_home": "Fișier fundal casă",
+          "bg_garaj": "Fișier fundal garaj",
+          "bg_curte": "Fișier fundal curte",
+          "bg_hol_mare": "Fișier fundal hol mare",
+          "bg_hol_mic": "Fișier fundal hol mic",
+          "bg_bucatarie": "Fișier fundal bucătărie",
+          "bg_dormitor_adi": "Fișier fundal dormitor Adi",
+          "bg_dormitor_adina": "Fișier fundal dormitor Adina",
+          "bg_dormitor_alexandra": "Fișier fundal dormitor Alexandra",
+          "room_overrides_json": "Mapare avansată entități (JSON)",
+          "doorbell_event": "Entitate eveniment sonerie",
+          "doorbell_notify": "Țintă notificare sonerie"
+        },
+        "data_description": {
+          "local_background_base": "Folosit doar când fundalurile incluse sunt dezactivate. Exemplu: /local/backgrounds",
+          "bg_home": "Nume de fișier relativ la baza fundalurilor sau cale /local completă. Exemplu: casa.jpg",
+          "bg_garaj": "Nume de fișier relativ la baza fundalurilor. Exemplu: garaj.jpg",
+          "bg_curte": "Nume de fișier relativ la baza fundalurilor. Exemplu: curte.jpg",
+          "bg_hol_mare": "Nume de fișier relativ la baza fundalurilor. Exemplu: hol_mare.jpg",
+          "bg_hol_mic": "Nume de fișier relativ la baza fundalurilor. Exemplu: hol_mic.jpg",
+          "bg_bucatarie": "Nume de fișier relativ la baza fundalurilor. Exemplu: bucatarie.jpg",
+          "bg_dormitor_adi": "Nume de fișier relativ la baza fundalurilor. Exemplu: dormitor_adi.jpg",
+          "bg_dormitor_adina": "Nume de fișier relativ la baza fundalurilor. Exemplu: dormitor_adina.jpg",
+          "bg_dormitor_alexandra": "Nume de fișier relativ la baza fundalurilor. Exemplu: dormitor_alexandra.jpg",
+          "room_overrides_json": "Chei acceptate: rooms, global, labels, remote_commands, features, clock, greeting_name. Camerele se îmbină după id, deci trimiți doar ce se schimbă.",
+          "doorbell_event": "Entitatea event declanșată de soneria fizică. Implicit: event.soneria_inteligenta_doorbell_picture.",
+          "doorbell_notify": "Entitatea/serviciul notify care sună la apăsarea soneriei. Implicit: notify.tvb."
+        }
+      }
+    },
+    "error": {
+      "invalid_title": "Titlul casei nu poate fi gol.",
+      "invalid_background_base": "Baza fundalurilor trebuie să înceapă cu /, http:// sau https://.",
+      "invalid_json": "Maparea avansată nu este JSON valid.",
+      "invalid_overrides": "Maparea avansată conține chei sau tipuri neacceptate."
+    }
+  }
+}
